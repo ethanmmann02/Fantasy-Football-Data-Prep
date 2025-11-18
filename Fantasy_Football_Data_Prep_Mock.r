@@ -235,8 +235,8 @@ recover_data <- function() {
   )
 }
 
-write.csv(mapping, "data/mapping.csv", row.names = FALSE)
-write.csv(standings_all_fixed, "data/standings_all_fixed.csv", row.names = FALSE)
+write.csv(mapping, "~/Desktop/App_Folder/data/mapping.csv", row.names = FALSE)
+write.csv(standings_all_fixed, "~/Desktop/App_Folder/data/standings_all_fixed.csv", row.names = FALSE)
 write.csv(schedule_named, "~/Desktop/App_Folder/data/schedule_named.csv", row.names = FALSE)
 
 
@@ -244,7 +244,3 @@ data_obj <- recover_data()
 
 getwd()
 list.files("data")
-
-Ethan <- standings_all_fixed %>%
-  filter(Player == "Ethan") %>%
-  select(franchise_id, franchise_name, h2h_wins, h2h_losses, season, Player)
